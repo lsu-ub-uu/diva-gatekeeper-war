@@ -26,14 +26,15 @@
 	</build>
 
 	<properties>
-		<gatekeeperserver.version>4.0.0</gatekeeperserver.version>
-		<storage.version>3.3.0</storage.version>
+		<gatekeeperserver.version>4.2-SNAPSHOT</gatekeeperserver.version>
+		<storage.version>3.6.0</storage.version>
 		<json.version>2.0.1</json.version>
 		<log4j.version>2.0.0</log4j.version>
 		<userpicker.version>3.1.0</userpicker.version>
-		<basicstorage.version>3.8.0</basicstorage.version>
+		<basicstorage.version>3.13-SNAPSHOT</basicstorage.version>
 		<servlet-api.version>4.0.1</servlet-api.version>
-		<searchstorage.version>3.3.0</searchstorage.version>
+		<searchstorage.version>3.4.0</searchstorage.version>
+		<divamixedstorage.version>3.14-SNAPSHOT</divamixedstorage.version>
 	</properties>
 
 	<scm>
@@ -56,6 +57,11 @@
 			<artifactId>storage</artifactId>
 			<version>${storage.version}</version>
 			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>divamixedstorage</artifactId>
+			<version>${divamixedstorage.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
