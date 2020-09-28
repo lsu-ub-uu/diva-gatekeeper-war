@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>1.0.2</version>
+		<version>1.1.1</version>
 	</parent>
 
 	<artifactId>diva-gatekeeper-war</artifactId>
@@ -26,15 +26,18 @@
 	</build>
 
 	<properties>
-		<gatekeeperserver.version>4.2-SNAPSHOT</gatekeeperserver.version>
-		<storage.version>3.6.0</storage.version>
-		<json.version>2.0.1</json.version>
-		<log4j.version>2.0.0</log4j.version>
-		<userpicker.version>3.1.0</userpicker.version>
-		<basicstorage.version>3.13-SNAPSHOT</basicstorage.version>
+		<gatekeeperserver.version>4.2.0</gatekeeperserver.version>
+		<gatekeeper.version>3.5.0</gatekeeper.version>
+		<coradata.version>3.7.0</coradata.version>
+		<json.version>2.1.0</json.version>
+		<storage.version>3.7.0</storage.version>
+		<log4j.version>2.1.0</log4j.version>
+		<basicdata.version>1.11.0</basicdata.version>
+		<userpicker.version>3.3.0</userpicker.version>
+		<basicstorage.version>3.14-SNAPSHOT</basicstorage.version>
 		<servlet-api.version>4.0.1</servlet-api.version>
-		<searchstorage.version>3.4.0</searchstorage.version>
-		<divamixedstorage.version>3.14-SNAPSHOT</divamixedstorage.version>
+		<searchstorage.version>3.5.0</searchstorage.version>
+		<divamixedstorage.version>3.15-SNAPSHOT</divamixedstorage.version>
 	</properties>
 
 	<scm>
@@ -48,8 +51,32 @@
 		<!-- Runtime -->
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>gatekeeper</artifactId>
+			<version>${gatekeeper.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>gatekeeperserver</artifactId>
 			<version>${gatekeeperserver.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>coradata</artifactId>
+			<version>${coradata.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>basicdata</artifactId>
+			<version>${basicdata.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>json</artifactId>
+			<version>${json.version}</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -62,12 +89,7 @@
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>divamixedstorage</artifactId>
 			<version>${divamixedstorage.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>json</artifactId>
-			<version>${json.version}</version>
-			<scope>compile</scope>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
