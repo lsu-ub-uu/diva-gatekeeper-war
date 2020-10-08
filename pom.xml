@@ -37,7 +37,7 @@
 		<basicstorage.version>3.14.0</basicstorage.version>
 		<servlet-api.version>4.0.1</servlet-api.version>
 		<searchstorage.version>3.5.0</searchstorage.version>
-		<divamixedstorage.version>3.15-SNAPSHOT</divamixedstorage.version>
+		<divamixedstorage.version>3.15.0</divamixedstorage.version>
 	</properties>
 
 	<scm>
