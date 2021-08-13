@@ -17,7 +17,7 @@
 	</parent>
 
 	<artifactId>diva-gatekeeper-war</artifactId>
-	<version>1.6.0</version>
+	<version>1.6.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>Diva Gatekeeper</name>
@@ -44,7 +44,7 @@
 		<connection>scm:git:https://github.com/lsu-ub-uu/diva-gatekeeper-war.git</connection>
 		<developerConnection>scm:git:https://github.com/lsu-ub-uu/diva-gatekeeper-war.git</developerConnection>
 		<url>https://github.com/lsu-ub-uu/diva-gatekeeper-war.git</url>
-		<tag>diva-gatekeeper-war-1.6.0</tag>
+		<tag>release/1.6</tag>
 	</scm>
 
 	<dependencies>
