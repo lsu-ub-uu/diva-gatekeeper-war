@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>2.0.0</version>
+		<version>2.3.0</version>
 	</parent>
 
 	<artifactId>diva-gatekeeper-war</artifactId>
@@ -26,18 +26,19 @@
 	</build>
 
 	<properties>
-		<gatekeeperserver.version>5.6.0</gatekeeperserver.version>
-		<gatekeeper.version>3.13.0</gatekeeper.version>
-		<coradata.version>7.0.0</coradata.version>
-		<json.version>3.3.0</json.version>
-		<storage.version>6.2.0</storage.version>
-		<log4j.version>2.9.0</log4j.version>
-		<basicdata.version>4.0.0</basicdata.version>
-		<userpicker.version>3.11.0</userpicker.version>
-		<basicstorage.version>6.0.0</basicstorage.version>
+		<initialize.version>1.3.0</initialize.version>
+		<gatekeeper.version>4.3.0</gatekeeper.version>
+		<gatekeeperserver.version>5.11.0</gatekeeperserver.version>
+		<json.version>3.7.0</json.version>
+		<spider.version>7.7-SNAPSHOT</spider.version>
+		<storage.version>8.0-SNAPSHOT</storage.version>
+		<log4j.version>2.13.0</log4j.version>
+		<basicdata.version>5.4-SNAPSHOT</basicdata.version>
+		<userpicker.version>4.3.0</userpicker.version>
+		<userstorage.version>1.5-SNAPSHOT</userstorage.version>
+		<basicstorage.version>7.4-SNAPSHOT</basicstorage.version>
 		<servlet-api.version>5.0.0</servlet-api.version>
-		<searchstorage.version>3.13.0</searchstorage.version>
-		<divamixedstorage.version>6.0.0</divamixedstorage.version>
+		<searchstorage.version>3.19-SNAPSHOT</searchstorage.version>
 	</properties>
 
 	<scm>
@@ -48,7 +49,12 @@
 	</scm>
 
 	<dependencies>
-		<!-- Runtime -->
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>initialize</artifactId>
+			<version>${initialize.version}</version>
+			<scope>compile</scope>
+		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>gatekeeper</artifactId>
@@ -60,12 +66,6 @@
 			<artifactId>gatekeeperserver</artifactId>
 			<version>${gatekeeperserver.version}</version>
 			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>coradata</artifactId>
-			<version>${coradata.version}</version>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
@@ -81,14 +81,14 @@
 		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>storage</artifactId>
-			<version>${storage.version}</version>
+			<artifactId>spider</artifactId>
+			<version>${spider.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>divamixedstorage</artifactId>
-			<version>${divamixedstorage.version}</version>
+			<artifactId>storage</artifactId>
+			<version>${storage.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -105,11 +105,16 @@
 		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>userstorage</artifactId>
+			<version>${userstorage.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>basicstorage</artifactId>
 			<version>${basicstorage.version}</version>
 			<scope>runtime</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>searchstorage</artifactId>
