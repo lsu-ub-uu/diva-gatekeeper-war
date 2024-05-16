@@ -27,7 +27,7 @@
 
 	<properties>
 		<initialize.version>1.6.0</initialize.version>
-		<gatekeeper.version>4.6.0</gatekeeper.version>
+		<gatekeeper.version>4.7-SNAPSHOT</gatekeeper.version>
 		<gatekeeperserver.version>5.15.0</gatekeeperserver.version>
 		<json.version>3.10.0</json.version>
 		<spider.version>8.2.0</spider.version>
@@ -40,7 +40,6 @@
 		<sqlstorage.version>2.13.0</sqlstorage.version>
 		<sqldatabase.version>7.3.0</sqldatabase.version>
 		<servlet-api.version>5.0.0</servlet-api.version>
-<!--		<searchstorage.version>3.20.0</searchstorage.version>-->
 	</properties>
 
 	<scm>
@@ -117,25 +116,18 @@
 			<version>${basicstorage.version}</version>
 			<scope>runtime</scope>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>se.uu.ub.cora</groupId>-->
-<!--			<artifactId>searchstorage</artifactId>-->
-<!--			<version>${searchstorage.version}</version>-->
-<!--			<scope>runtime</scope>-->
-<!--		</dependency>-->
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>sqldatabase</artifactId>
-			<version>${sqldatabase.version}</version>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>sqlstorage</artifactId>
 			<version>${sqlstorage.version}</version>
 			<scope>runtime</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>sqldatabase</artifactId>
+			<version>${sqldatabase.version}</version>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
