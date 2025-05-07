@@ -33,7 +33,7 @@
 		<spider.version>9.19.0</spider.version>
 		<storage.version>9.8.0</storage.version>
 		<log4j.version>2.16.0</log4j.version>
-		<basicdata.version>6.3.0</basicdata.version>
+		<basicdata.version>6.5.0</basicdata.version>
 		<userpicker.version>4.8.0</userpicker.version>
 		<userstorage.version>1.17.0</userstorage.version>
 		<basicstorage.version>7.17.0</basicstorage.version>
